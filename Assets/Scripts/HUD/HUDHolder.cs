@@ -74,7 +74,7 @@ public class HUDHolder : MonoBehaviour
         //invaderTextAnimator.SetTrigger("highlight");
     }
 
-    public void UpdateHealthCounter(int amount)
+    private void UpdateHealthCounter(int amount)
     {
         //helathTextAnimator.SetTrigger("highlight");
         healthText.SetText(amount.ToString());
