@@ -13,16 +13,13 @@ public class PlayerHealthController : MonoBehaviour
     public static event Action<int> HealthModified;
     public static event Action PlayerDead;
     // Start is called before the first frame update
+
+    [SerializeField] private HUDHolder hudHolder;
+
     void Start()
     {
         currentHealth = startingHealth;
         HealthModified?.Invoke(currentHealth);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -38,6 +35,8 @@ public class PlayerHealthController : MonoBehaviour
         currentHealth -= amount;
         AudioManager.I.PlaySound(SoundName.PlayerDamaged);
         HealthModified?.Invoke(currentHealth);
+
+        hudHolder.UpdateHealthCounter(currentHealth);
 
         if (currentHealth <= 0)
             Dead();

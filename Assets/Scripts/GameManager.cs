@@ -7,16 +7,16 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Camera mainCamera;
     [SerializeField] private GameObject deadMenu;
     [SerializeField] private GameObject winMenu;
-    [SerializeField] private GameObject floatingHud;
-    [SerializeField] private GameObject tutorialHud;
+    //[SerializeField] private GameObject floatingHud;
+    //[SerializeField] private GameObject tutorialHud;
 
     [SerializeField] private GameObject leftHand;
     [SerializeField] private GameObject rightHand;
     [SerializeField] private GameObject leftRay;
     [SerializeField] private GameObject rightRay;
 
-    [SerializeField] private GameObject gun;
-    [SerializeField] private GameObject shield;
+    //[SerializeField] private GameObject gun;
+    //[SerializeField] private GameObject shield;
 
     [SerializeField] private SpawnMotherShipManager spawner;
     [SerializeField] private int motherShipsToWin;
@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
 
     private void ShowDeadMenu()
     {
-        floatingHud.SetActive(false);
+        //floatingHud.SetActive(false);
         deadMenu.SetActive(true);
         if (deadMenu.TryGetComponent(out DeadMenu dm))
         {
@@ -72,7 +72,7 @@ public class GameManager : MonoBehaviour
         if (mothershipsDestroyed < motherShipsToWin)
             return;
 
-        floatingHud.SetActive(false);
+        //floatingHud.SetActive(false);
         winMenu.SetActive(true);
         if (winMenu.TryGetComponent(out DeadMenu dm))
         {
@@ -91,8 +91,8 @@ public class GameManager : MonoBehaviour
         leftHand.SetActive(false);
         rightHand.SetActive(false);
 
-        gun.SetActive(false);
-        shield.SetActive(false);
+        //gun.SetActive(false);
+        //shield.SetActive(false);
 
         leftRay.SetActive(true);
         rightRay.SetActive(true);
@@ -107,7 +107,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(seconds);
 
         spawner.spawnPoints[0].SetActive(true);
-        tutorialHud.SetActive(false);
+        //tutorialHud.SetActive(false);
         // Restaura el tiempo normal
         //Time.timeScale = 1;
     }
@@ -115,7 +115,7 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         spawner.spawnPoints[0].SetActive(true);
-        tutorialHud.SetActive(false);
+        //tutorialHud.SetActive(false);
         if (TryGetComponent(out MeshRenderer mr))
         {
             mr.enabled = false;
