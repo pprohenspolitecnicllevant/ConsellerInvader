@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e26e5dba8e1f8e47b864196b6558eac, type: 3}
+  m_Name: SoundLibrary
+  m_EditorClassIdentifier: 
+  soundClips:
+  - soundName: 0
+    audioClip: {fileID: 8300000, guid: 452a34f8aa0d46042979941965948184, type: 3}
+    loop: 1
+    volume: 0.4
+    hasPlayTimer: 0
+    playTimer: 0
+    spacialBlend: 0
+  - soundName: 1
+    audioClip: {fileID: 8300000, guid: ddc991158228faa4b989d0190d7b5834, type: 3}
+    loop: 0
+    volume: 0.7
+    hasPlayTimer: 0
+    playTimer: 0
+    spacialBlend: 1
+  - soundName: 3
+    audioClip: {fileID: 8300000, guid: dc96d35bb2d51dd4ca6bffe1a08f3b14, type: 3}
+    loop: 0
+    volume: 1
+    hasPlayTimer: 0
+    playTimer: 0
+    spacialBlend: 0.8
+  - soundName: 4
+    audioClip: {fileID: 8300000, guid: 4393ccf7e588762499403346625dd13e, type: 3}
+    loop: 0
+    volume: 1
+    hasPlayTimer: 1
+    playTimer: 5.649297
+    spacialBlend: 0.8
+  - soundName: 6
+    audioClip: {fileID: 8300000, guid: 65f4a92ede6c71d45a33ab3641446539, type: 3}
+    loop: 0
+    volume: 0.7
+    hasPlayTimer: 1
+    playTimer: 0.5992063
+    spacialBlend: 1
+  - soundName: 7
+    audioClip: {fileID: 8300000, guid: f4ab8377b79194e48ade315e33c9396b, type: 3}
+    loop: 0
+    volume: 1
+    hasPlayTimer: 0
+    playTimer: 0
+    spacialBlend: 1
+  - soundName: 2
+    audioClip: {fileID: 8300000, guid: d1e2a6e3caca3c04897fcbc441c33996, type: 3}
+    loop: 0
+    volume: 0.8
+    hasPlayTimer: 0
+    playTimer: 0
+    spacialBlend: 1
+  - soundName: 5
+    audioClip: {fileID: 8300000, guid: 115aea67af3b36942b707fbf67763e02, type: 3}
+    loop: 0
+    volume: 1
+    hasPlayTimer: 0
+    playTimer: 0
+    spacialBlend: 0.3
+  - soundName: 8
+    audioClip: {fileID: 8300000, guid: 98ad410aee2bb0e418b8b78a5804a267, type: 3}
+    loop: 0
+    volume: 1
+    hasPlayTimer: 0
+    playTimer: 0
+    spacialBlend: 0
+  - soundName: 9
+    audioClip: {fileID: 8300000, guid: 288d8c39253d49d47b2b17c06a68047a, type: 3}
+    loop: 0
+    volume: 1
+    hasPlayTimer: 0
+    playTimer: 0
+    spacialBlend: 0
+  - soundName: 10
+    audioClip: {fileID: 8300000, guid: f5517a6b5305a3c469bcfba3ef71afe2, type: 3}
+    loop: 0
+    volume: 1
+    hasPlayTimer: 0
+    playTimer: 0
+    spacialBlend: 0
+  - soundName: 11
+    audioClip: {fileID: 8300000, guid: b6c231409d1e63e4888813173903fc5c, type: 3}
+    loop: 1
+    volume: 1
+    hasPlayTimer: 0
+    playTimer: 0
+    spacialBlend: 0

@@ -1,0 +1,66 @@
+{
+    "invader": {
+        "motion": {
+            "type": "linear",
+            "minSpeed": 10,
+            "maxSpeed": 30
+        },
+        "shooting": {
+            "minShots": 1,
+            "maxShots": 5,
+            "minShootTimer": 0.5,
+            "maxShootTimer": 1,
+            "distanceStopAttack": 12
+        },
+        "life": {
+            "minHitsToDead": 2,
+            "maxHitsToDead": 6,
+            "minHealingPower": 1,
+            "maxHealingPower": 5
+        },
+        "spawning": {
+            "minSpawnTime": 4,
+            "maxSpawnTime": 8
+        }
+    },
+
+    "player": {
+        "life": {
+            "numHitsToDead": 10,
+            "energyLossOnHit": 0.1,
+            "healingAbsorb": 0.5
+        },
+        "laserGun": {
+            "timeCounterDuration": 10.0,
+            "coolSpeed": 3.0,
+            "heatSpeed": 2.0,
+            "bulletSpeed": 80.0
+        },
+        "magnetGun": {
+            "timeCounterDuration": 10.0,
+            "coolSpeed": 5.0,
+            "heatSpeed": 2.0,
+            "magnetStrength": 50.0,
+            "magnetStopDistance": 4.0,
+            "magnetRange": 15.0
+        }
+    },
+    "tower": {
+        "numCovers": 8,
+        "cover": {
+            "startEnergyLevel": 5,
+            "numHitsToExplode": 10,
+            "energyLossOnHit": 0.1,
+            "healingPowerAbs": 1,
+            "minIntensGlow": 2.0,
+            "maxIntensGlow": 4.0,
+            "glowSpeed": 0.25,
+            "maxLife": 100
+        }
+    },
+    "terrain": {
+        "minIntensGlow": 7,
+        "maxIntensGlow": 21,
+        "glowSpeed": 0.75
+    }
+}
