@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
 
     private int mothershipsDestroyed;
 
-    private void Awake() 
+    private void Awake()
     {
         StatsManager.Init();
         //StartCoroutine(StatsManager.InitCo());
@@ -48,6 +48,11 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         //StartCoroutine(PauseForSeconds(startPauseTime));
+    }
+
+    private void Update()
+    {
+        transform.Rotate(Vector3.up * 30 * Time.deltaTime);
     }
 
     private void ShowDeadMenu()
@@ -120,5 +125,11 @@ public class GameManager : MonoBehaviour
         {
             mr.enabled = false;
         }
+        if (TryGetComponent(out Collider col))
+        {
+            col.enabled = false;
+        }
+        Transform texts = transform.Find("Texts");
+        texts.gameObject.SetActive(false);
     }
 }

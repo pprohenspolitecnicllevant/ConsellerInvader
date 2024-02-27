@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - LaserGun
+  - Bullet
+  - GameManager
+  - InvaderBullet
+  - Mothership
+  - NukeWave
   layers:
   - Default
   - TransparentFX
@@ -11,11 +17,11 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Invader
+  - Covers
+  - Ground
+  - Bullets
+  - Player
   - 
   - 
   - 
